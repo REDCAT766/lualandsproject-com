@@ -1,0 +1,10 @@
+{
+  "consent_status": "granted",
+  "preferences": {
+    "analytics_storage": true,
+    "ad_storage": false,
+    "functional_storage": true
+  },
+  "timestamp": "2026-10-21T19:55:00Z",
+  "cookie_version": "1.0"
+}

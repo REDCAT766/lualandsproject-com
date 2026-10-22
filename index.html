@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lualands</title>
+    <style>
+        /* Base page styling */
+        body {
+            background-color: blue;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+        /* Clean white text styling for your content */
+        p, h1, pre {
+            color: #ffffff;
+        }
+
+        /* Cleaned up button styling */
+        .download-btn {
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #0011fc;
+            border: 2px solid #ffffff;
+            padding: 12px 24px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .download-btn:hover {
+            background-color: #ffffff;
+            color: #0011fc;
+        }
+
+        /* Form spacing styling */
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            gap: 10px;
+        }
+        input, textarea, form button {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>download lualands</pre>
+    <p>by some algerian.</p>
+    <h1>this is the lualands page.</h1>
+
+    <!-- Direct Download Link (Fixed Nesting) -->
+    <a href="lualands.exe" download="lualands.exe" class="download-btn">
+         Download lualands.exe
+    </a>
+
+    <pre>this is my first shit</pre>
+
+    <!-- Feedback Form (Replace YOUR_ENDPOINT_HERE) -->
+    <form action="https://formspree.io" method="POST">
+        <input type="email" name="email" required placeholder="Your Email Address">
+        <textarea name="message" required placeholder="Your Feedback"></textarea>
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+</body>
+</html>

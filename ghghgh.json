@@ -1,0 +1,20 @@
+// Function to get and parse the JSON cookie
+function getJsonCookie(name) {
+  let nameEQ = name + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i].trim();
+    if (c.indexOf(nameEQ) == 0) {
+      let cookieValue = decodeURIComponent(c.substring(nameEQ.length, c.length));
+      return JSON.parse(cookieValue); // Converts the text back into a JSON object
+    }
+  }
+  return null;
+}
+
+// Example usage:
+const savedConsent = getJsonCookie('user_consent');
+if (savedConsent && savedConsent.analytics === true) {
+  console.log("Analytics are allowed! Status updated at: " + savedConsent.updatedAt);
+  // Trigger your GA4 code here
+}
